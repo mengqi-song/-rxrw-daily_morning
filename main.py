@@ -6,11 +6,11 @@ import requests
 import os
 import random
 
-user_id1 = os.environ["USER_ID_ONE"]
+user_id1 = os.environ["USER_ID1"]
 city1 = os.environ['CITY1']
 birthday1 = os.environ['BIRTHDAY1']
 
-user_id2 = os.environ["USER_ID_TWO"]
+user_id2 = os.environ["USER_ID2"]
 city2 = os.environ['CITY2']
 birthday2 = os.environ['BIRTHDAY2']
 

@@ -55,12 +55,12 @@ client = WeChatClient(app_id, app_secret)
 wm1 = WeChatMessage(client)
 wea, temperature = get_weather(city1)
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count()},"birthday_left1":{"value":birthday_left1},"birthday_left2":{"value":birthday_left2},"words":{"value":get_words(), "color":get_random_color()}}
-res = wm.send_template(user_id1, template_id, data)
+res = wm1.send_template(user_id1, template_id, data)
 print(res)
 
 wm2 = WeChatMessage(client)
 wea, temperature = get_weather(city2)
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count()},"birthday_left1":{"value":birthday_left1},"birthday_left2":{"value":birthday_left2},"words":{"value":get_words(), "color":get_random_color()}}
-res = wm.send_template(user_id2, template_id, data)
+res = wm2.send_template(user_id2, template_id, data)
 print(res)
 
